@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Front.MainFrom">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="1" left="1" bottom="1" right="1"/>
+    <constraints>
+      <xy x="20" y="20" width="1246" height="1117"/>
+    </constraints>
+    <properties>
+      <minimumSize width="500" height="500"/>
+      <preferredSize width="904" height="443"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="79dad" binding="ParentPanel" layout-manager="CardLayout" hgap="0" vgap="0">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="600" height="400"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-12508893"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="62ad5" binding="addAlbumspanel" layout-manager="GridLayoutManager" row-count="6" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="5" left="5" bottom="5" right="5"/>
+            <constraints>
+              <card name="Card1"/>
+            </constraints>
+            <properties>
+              <background color="-4208047"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <hspacer id="de382">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="6" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <component id="6a057" class="javax.swing.JButton" binding="cancelButton" default-binding="true">
+                <constraints>
+                  <grid row="4" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Cancel"/>
+                </properties>
+              </component>
+              <component id="90c68" class="javax.swing.JLabel" binding="albums">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="100" height="100"/>
+                    <preferred-size width="100" height="100"/>
+                    <maximum-size width="100" height="100"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font name="Source Code Pro" size="24"/>
+                  <text value="Albums"/>
+                </properties>
+              </component>
+              <component id="7f173" class="javax.swing.JLabel" binding="artist_label">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Artist"/>
+                </properties>
+              </component>
+              <component id="f4806" class="javax.swing.JLabel" binding="name_label">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Name"/>
+                </properties>
+              </component>
+              <component id="e3beb" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Year"/>
+                </properties>
+              </component>
+              <component id="a914c" class="javax.swing.JTextField" binding="artistField">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="6" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <name value="artist"/>
+                </properties>
+              </component>
+              <component id="a677a" class="javax.swing.JTextField" binding="nameField">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="6" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <name value="name"/>
+                </properties>
+              </component>
+              <component id="c2935" class="javax.swing.JTextField" binding="yearField">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="6" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <name value="yaer"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <vspacer id="31697">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="c9d20" class="javax.swing.JButton" binding="add">
+                <constraints>
+                  <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <label value="Add"/>
+                  <text value="Add"/>
+                  <verticalAlignment value="0"/>
+                  <verticalTextPosition value="3"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="9e361" binding="viewAlbumsPanel" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="5" left="5" bottom="5" right="5"/>
+            <constraints>
+              <card name="Card2"/>
+            </constraints>
+            <properties>
+              <background color="-12355792"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="3bc38" class="javax.swing.JLabel" binding="album_label">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14401249"/>
+                  <font name="Arial Black" size="22"/>
+                  <text value="Albums"/>
+                </properties>
+              </component>
+              <component id="2f006" class="javax.swing.JButton" binding="AddButton">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="Add"/>
+                </properties>
+              </component>
+              <hspacer id="32e75">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <component id="5d74f" class="javax.swing.JTable" binding="albumsTable">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <autoCreateRowSorter value="true"/>
+                  <background color="-12355792"/>
+                  <foreground color="-4486870"/>
+                  <selectionForeground color="-10450245"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
