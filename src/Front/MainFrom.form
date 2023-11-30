@@ -169,12 +169,16 @@
               <component id="5d74f" class="javax.swing.JTable" binding="albumsTable">
                 <constraints>
                   <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-                    <preferred-size width="150" height="50"/>
+                    <preferred-size width="0" height="0"/>
                   </grid>
                 </constraints>
                 <properties>
                   <autoCreateRowSorter value="true"/>
+                  <autoResizeMode value="4"/>
                   <background color="-12355792"/>
+                  <editingColumn value="0"/>
+                  <editingRow value="0"/>
+                  <enabled value="false"/>
                   <foreground color="-4486870"/>
                   <selectionForeground color="-10450245"/>
                 </properties>

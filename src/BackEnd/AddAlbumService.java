@@ -6,9 +6,10 @@ import java.awt.event.ActionListener;
 import java.sql.*;
 
 public class AddAlbumService {
-    private JTextField artistField;
-    private JTextField nameField;
-    private JTextField yearField;
+    private final JTextField artistField;
+    private final JTextField nameField;
+    private final JTextField yearField;
+
     public AddAlbumService(
             JTextField artistField,
             JTextField nameField,

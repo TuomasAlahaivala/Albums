@@ -3,7 +3,12 @@ package BackEnd;
 import javax.swing.*;
 import java.sql.*;
 
-public class Albums {
+public class AlbumsService {
+
+    public static AlbumsService getInstance() {
+        return new AlbumsService();
+    }
+
     public JTable getAlbums() throws SQLException {
 
         int count = this.getAlbumsCount();

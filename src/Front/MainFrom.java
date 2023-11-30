@@ -1,7 +1,8 @@
 package Front;
 
 import BackEnd.AddAlbumService;
-import BackEnd.Albums;
+import BackEnd.Album;
+import BackEnd.AlbumsService;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -24,6 +25,10 @@ public class MainFrom extends JDialog{
     private JButton cancelButton;
     private JTable albumsTable;
     private JLabel album_label;
+
+    void constructor() {
+
+    }
 
     public MainFrom() {
         AddButton.addActionListener(new ActionListener() {
@@ -66,7 +71,7 @@ public class MainFrom extends JDialog{
     }
 
     private void albumsView() {
-        Albums albums1 = new Albums();
+        AlbumsService albums1 = AlbumsService.getInstance();
         JTable albums = null;
         int rowCount = 0;
         try {
@@ -77,6 +82,8 @@ public class MainFrom extends JDialog{
         }
         albums.setBounds(50,25,700,rowCount * 17);
         albums.getTableHeader().setBounds(50,0,700,25);
+        // Estetään editointi!!!
+        albums.setEnabled(false);
         this.albumsTable.add(albums);
         albumsTable.add(albums.getTableHeader());
         ParentPanel.removeAll();
